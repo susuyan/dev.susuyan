@@ -1,22 +1,14 @@
 {
   "title": "导航",
   "pages": [
-    "index",
     "changes",
     "config",
     "focus",
     "habits",
     "how-i-code",
-    "likes",
-    "lock-in",
     "meaning",
     "music",
-    "past",
-    "places",
-    "sharing",
     "values",
-    "workflow",
-    "journal",
-    "projects"
+    "workflow"
   ]
 }
