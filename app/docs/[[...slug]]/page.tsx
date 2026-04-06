@@ -25,7 +25,6 @@ export default async function Page(props: {
   return (
     <DocsPage toc={data.toc} full={data.full}>
       <DocsBody>
-        <h1 className="text-3xl font-bold mb-4">{data.title}</h1>
         <MDX />
       </DocsBody>
     </DocsPage>
