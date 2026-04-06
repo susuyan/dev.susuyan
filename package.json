@@ -1,0 +1,34 @@
+{
+  "name": "dev.susuyan",
+  "version": "1.0.0",
+  "description": "Personal knowledge base built with Fumadocs",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "fumadocs-mdx"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "dependencies": {
+    "fumadocs-core": "^16.7.10",
+    "fumadocs-mdx": "^14.2.11",
+    "fumadocs-ui": "^16.7.10",
+    "next": "^16.2.2",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "@types/node": "^25.5.2",
+    "@types/react": "^19.2.14",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^6.0.2"
+  }
+}
