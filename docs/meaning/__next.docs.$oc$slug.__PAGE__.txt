@@ -1,7 +1,0 @@
-1:"$Sreact.fragment"
-2:I[53266,["/_next/static/chunks/03x05crl-6woz.js","/_next/static/chunks/0qid5lwcbx9s0.js","/_next/static/chunks/0r0l9kxes.~23.js","/_next/static/chunks/16llum8kli9o8.js","/_next/static/chunks/0_enl62q.pz64.js","/_next/static/chunks/0567uvmsmt63_.js"],"DocsPage"]
-3:I[53266,["/_next/static/chunks/03x05crl-6woz.js","/_next/static/chunks/0qid5lwcbx9s0.js","/_next/static/chunks/0r0l9kxes.~23.js","/_next/static/chunks/16llum8kli9o8.js","/_next/static/chunks/0_enl62q.pz64.js","/_next/static/chunks/0567uvmsmt63_.js"],"DocsBody"]
-4:I[97367,["/_next/static/chunks/03x05crl-6woz.js","/_next/static/chunks/0qid5lwcbx9s0.js"],"OutletBoundary"]
-5:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"toc":[{"depth":1,"url":"#meaning","title":"Meaning"},{"depth":2,"url":"#核心价值","title":"核心价值"}],"children":["$","$L3",null,{"children":[["$","h1",null,{"id":"meaning","children":"Meaning"}],"\n",["$","p",null,{"children":"探索生活和工作的意义。"}],"\n",["$","h2",null,{"id":"核心价值","children":"核心价值"}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":"持续学习"}],"\n",["$","li",null,{"children":"创造价值"}],"\n",["$","li",null,{"children":"保持好奇"}],"\n"]}]]}]}],[["$","script","script-0",{"src":"/_next/static/chunks/0_enl62q.pz64.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0567uvmsmt63_.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"w74rmYC2B2EwpHzcCCmNo"}
-6:null
