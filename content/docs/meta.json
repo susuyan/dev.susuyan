@@ -2,26 +2,13 @@
   "title": "导航",
   "root": true,
   "pages": [
-    "index",
-    "changes",
     "config",
-    "docs",
     "focus",
     "habits",
     "how-i-code",
-    "karabiner",
-    "likes",
-    "lock-in",
     "meaning",
     "music",
-    "past",
-    "places",
-    "sharing",
-    "stream",
     "values",
-    "videos",
-    "workflow",
-    "journal",
-    "projects"
+    "workflow"
   ]
 }
