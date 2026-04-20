@@ -71,13 +71,15 @@ export default async function Page(props: {
         {data.toc?.length ? (
           <aside className="hidden lg:block">
             <div className="sticky top-24">
-              <div className="mb-3 text-xs font-medium text-fd-muted-foreground">On this page</div>
-              <ul className="space-y-2 text-sm">
+              <div className="mb-5 text-xs font-medium uppercase tracking-wider text-fd-muted-foreground">
+                On this page
+              </div>
+              <ul className="space-y-3 text-sm">
                 {data.toc.map((item) => (
-                  <li key={item.url} className={item.depth > 2 ? 'pl-3' : ''}>
+                  <li key={item.url} className={item.depth > 2 ? 'pl-4' : ''}>
                     <a
                       href={item.url}
-                      className="text-fd-muted-foreground hover:text-fd-foreground"
+                      className="inline-block text-fd-muted-foreground hover:text-fd-foreground transition-colors"
                     >
                       {item.title}
                     </a>
