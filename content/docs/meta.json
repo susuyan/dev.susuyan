@@ -3,17 +3,12 @@
   "root": true,
   "pages": [
     "index",
-    "changes",
     "config",
-    "docs",
     "focus",
-    "habits",
     "how-i-code",
     "meaning",
     "music",
     "workflow",
-    "values",
-    "journal",
-    "projects"
+    "values"
   ]
 }
