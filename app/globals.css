@@ -1,2 +1,275 @@
 @import 'tailwindcss';
 @import 'fumadocs-ui/style.css';
+
+/* ============================================
+   dev.susuyan 主题定制
+   设计哲学：温暖、手工感、有温度
+   ============================================ */
+
+/* --- 字体配置 --- */
+@theme {
+  --font-sans: 'Inter', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Georgia', 'Noto Serif SC', 'Songti SC', serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Noto Sans Mono', monospace;
+}
+
+/* --- 色彩系统（温暖柔和） --- */
+@theme {
+  /* Light 主题 - 柔和不刺眼 */
+  --color-background: #faf8f5;
+  --color-foreground: #2d2a26;
+  --color-muted: #f5f0eb;
+  --color-muted-foreground: #8a8078;
+  --color-border: #e8e0d8;
+  --color-primary: #c4785a;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f0ebe5;
+  --color-secondary-foreground: #5a524c;
+  --color-accent: #d4a574;
+  --color-accent-foreground: #2d2a26;
+  --color-card: #ffffff;
+  --color-card-foreground: #2d2a26;
+  --color-ring: #c4785a;
+
+  /* 文档内容区域 */
+  --color-docs-background: #faf8f5;
+  --color-docs-foreground: #2d2a26;
+  --color-docs-muted: #f5f0eb;
+  --color-docs-border: #e8e0d8;
+}
+
+/* Dark 主题 - 深邃不压抑 */
+.dark {
+  --color-background: #1a1816;
+  --color-foreground: #e8e0d8;
+  --color-muted: #2a2622;
+  --color-muted-foreground: #a09890;
+  --color-border: #3a3530;
+  --color-primary: #d4a574;
+  --color-primary-foreground: #1a1816;
+  --color-secondary: #2a2622;
+  --color-secondary-foreground: #d8d0c8;
+  --color-accent: #c4785a;
+  --color-accent-foreground: #e8e0d8;
+  --color-card: #24201c;
+  --color-card-foreground: #e8e0d8;
+  --color-ring: #d4a574;
+
+  --color-docs-background: #1a1816;
+  --color-docs-foreground: #e8e0d8;
+  --color-docs-muted: #2a2622;
+  --color-docs-border: #3a3530;
+}
+
+/* --- 全局基础样式 --- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- 阅读体验优化 --- */
+.prose,
+.fd-prose {
+  max-width: 70ch;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.prose p,
+.fd-prose p {
+  margin-bottom: 1.25em;
+  letter-spacing: 0.01em;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.fd-prose h1,
+.fd-prose h2,
+.fd-prose h3,
+.fd-prose h4 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+}
+
+.prose h1,
+.fd-prose h1 {
+  font-size: 2.25rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.5em;
+}
+
+.prose h2,
+.fd-prose h2 {
+  font-size: 1.75rem;
+}
+
+.prose h3,
+.fd-prose h3 {
+  font-size: 1.375rem;
+}
+
+.prose code,
+.fd-prose code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background-color: var(--color-muted);
+  padding: 0.2em 0.4em;
+  border-radius: 0.25em;
+}
+
+.prose pre,
+.fd-prose pre {
+  background-color: var(--color-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5em;
+  padding: 1.25em;
+  overflow-x: auto;
+}
+
+.prose pre code,
+.fd-prose pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.prose blockquote,
+.fd-prose blockquote {
+  border-left: 3px solid var(--color-accent);
+  background-color: var(--color-muted);
+  padding: 1em 1.25em;
+  margin: 1.5em 0;
+  font-style: italic;
+  border-radius: 0 0.5em 0.5em 0;
+}
+
+.prose a,
+.fd-prose a {
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.prose a:hover,
+.fd-prose a:hover {
+  border-bottom-color: var(--color-primary);
+}
+
+.prose ul,
+.prose ol,
+.fd-prose ul,
+.fd-prose ol {
+  padding-left: 1.5em;
+  margin-bottom: 1.25em;
+}
+
+.prose li,
+.fd-prose li {
+  margin-bottom: 0.5em;
+}
+
+.prose img,
+.fd-prose img {
+  border-radius: 0.5em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* --- 导航栏定制 --- */
+.fd-nav {
+  background-color: var(--color-background);
+  border-bottom: 1px solid var(--color-border);
+  backdrop-filter: blur(8px);
+}
+
+.fd-nav-title {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+/* --- 侧边栏定制 --- */
+.fd-sidebar {
+  background-color: var(--color-background);
+  border-right: 1px solid var(--color-border);
+}
+
+.fd-sidebar-item {
+  border-radius: 0.375em;
+  transition: background-color 0.15s ease;
+}
+
+.fd-sidebar-item:hover {
+  background-color: var(--color-muted);
+}
+
+.fd-sidebar-item-active {
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+/* --- 卡片/容器 --- */
+.fd-card {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* --- 滚动条定制 --- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-muted-foreground);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* --- 选择文本颜色 --- */
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-accent-foreground);
+}
+
+/* --- 打印优化 --- */
+@media print {
+  .fd-nav,
+  .fd-sidebar,
+  .fd-toc {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .prose a,
+  .fd-prose a {
+    color: black;
+    text-decoration: underline;
+  }
+}

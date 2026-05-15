@@ -16,9 +16,10 @@ export function baseOptions(): BaseLayoutProps {
     // 主题切换（支持双主题）
     themeSwitch: {
       enabled: true,
+      mode: 'light-dark',
     },
 
-    // GitHub 链接（自动生成 GitHub icon）
+    // GitHub 链接
     githubUrl: 'https://github.com/susuyan/dev.susuyan',
   };
 }
